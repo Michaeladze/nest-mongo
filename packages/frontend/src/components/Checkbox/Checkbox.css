@@ -1,0 +1,93 @@
+.ui-checkbox {
+    display: inline-flex;
+    cursor: pointer;
+}
+
+.ui-checkbox__input {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+}
+
+.ui-checkbox__check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid var(--gray-400);
+    transition: 0.15s ease-in;
+}
+
+.ui-checkbox__mark {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.1s ease-in-out;
+    color: var(--white);
+}
+
+.ui-checkbox__label {
+    width: auto;
+    margin-left: 8px;
+    transition: 0.1s ease-in-out;
+    text-overflow: ellipsis;
+    user-select: none;
+    cursor: pointer;
+}
+
+.ui-checkbox__input:hover + .ui-checkbox__check,
+.ui-checkbox__input:focus + .ui-checkbox__check {
+    border-color: var(--primary-500);
+}
+
+.ui-checkbox__input:hover + .ui-checkbox__check .ui-checkbox__mark,
+.ui-checkbox__input:focus + .ui-checkbox__check .ui-checkbox__mark {
+    opacity: 1;
+    color: var(--primary-500);
+}
+
+
+.ui-checkbox__input:checked + .ui-checkbox__check {
+    background-color: var(--primary-500);
+    border-color: var(--primary-500);
+}
+
+.ui-checkbox__input:checked + .ui-checkbox__check .ui-checkbox__mark {
+      opacity: 1;
+}
+
+.ui-checkbox__input:checked:hover + .ui-checkbox__check,
+.ui-checkbox__input:checked:focus + .ui-checkbox__check {
+    background-color: var(--primary-600);
+    border-color: var(--primary-600);
+}
+
+.ui-checkbox__input:checked:hover + .ui-checkbox__check .ui-checkbox__mark,
+.ui-checkbox__input:checked:focus + .ui-checkbox__check .ui-checkbox__mark {
+    opacity: 1;
+    color: var(--white);
+}
+
+.ui-checkbox--disabled {
+    pointer-events: none;
+    cursor: default;
+}
+
+.ui-checkbox--disabled .ui-checkbox__check,
+.ui-checkbox--disabled .ui-checkbox__input:checked + .ui-checkbox__check {
+    border-color: var(--gray-300);
+    background-color: var(--gray-200);
+}
+
+.ui-checkbox--disabled .ui-checkbox__mark {
+    color: var(--gray-300);
+}

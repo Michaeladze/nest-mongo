@@ -1,0 +1,22 @@
+.ui-select {
+    position: relative;
+}
+
+.ui-select__icon > svg {
+    transform: rotate(-180deg);
+    transition: 0.15s ease-in-out;
+}
+
+.ui-select__icon--rotate > svg {
+    transform: rotate(0deg);
+}
+
+.ui-select__dropdown {
+    min-width: 100%;
+    background-color: var(--white);
+    box-shadow: var(--depth);
+    border-radius: 4px;
+    padding: 4px 0;
+    overflow-y: auto;
+    max-height: 200px;
+}

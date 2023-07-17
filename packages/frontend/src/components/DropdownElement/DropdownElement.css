@@ -1,0 +1,10 @@
+.ui-dropdown-element {
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.ui-dropdown-element--active,
+.ui-dropdown-element:hover {
+    outline: none;
+    color: var(--primary-500);
+}

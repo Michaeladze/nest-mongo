@@ -1,0 +1,21 @@
+.ui-menu {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.ui-menu__anchor {
+    display: inline-flex;
+    flex-direction: column;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+.ui-menu__content {
+    background-color: var(--white);
+    box-shadow: var(--depth);
+    border-radius: 4px;
+    padding: 4px 0;
+    z-index: 999;
+}

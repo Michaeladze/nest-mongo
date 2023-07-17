@@ -1,0 +1,38 @@
+.ui-avatar {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.ui-avatar__circle {
+    border-radius: 50%;
+    background-color: var(--gray-200);
+    border: 1px solid var(--gray-400);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ui-avatar.s .ui-avatar__circle {
+    width: 32px;
+    height: 32px;
+}
+
+.ui-avatar.m .ui-avatar__circle {
+    width: 40px;
+    height: 40px;
+}
+
+.ui-avatar.l .ui-avatar__circle {
+    width: 48px;
+    height: 48px;
+}
+
+.ui-avatar__circle.text-10 {
+    font-weight: 400;
+}
+
+.ui-avatar__circle.text-12 {
+    font-weight: 400;
+}

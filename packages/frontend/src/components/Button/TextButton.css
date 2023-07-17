@@ -1,0 +1,22 @@
+.ui-button--text {
+    background-color: var(--white);
+    color: var(--gray-900);
+    border: 1px solid transparent;
+}
+
+.ui-button--text:hover {
+    background-color: var(--gray-200);
+}
+
+.ui-button--text:active,
+.ui-button--text:focus {
+    background-color: var(--gray-200);
+}
+
+.ui-button--text.ui-button--disabled {
+    background-color: transparent;
+    border-color: transparent;
+    cursor: default;
+    pointer-events: none;
+    color: var(--gray-300);
+}

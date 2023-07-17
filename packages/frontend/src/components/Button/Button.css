@@ -1,0 +1,18 @@
+.ui-button {
+    position: relative;
+    height: 32px;
+    padding: 0 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.15s ease-out;
+    outline: none;
+}
+
+.ui-button__text {
+    opacity: 1;
+}
+
+.ui-button--spinner .ui-button__text {
+    opacity: 0;
+}

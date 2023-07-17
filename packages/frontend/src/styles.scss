@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+@import "styles/reset.css";
+@import "styles/fonts.css";
+@import "styles/variables.css";
+@import "styles/utility.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: OpenSans, sans-serif;
+}
+
+html, body, #root {
+  height: 100%;
+}

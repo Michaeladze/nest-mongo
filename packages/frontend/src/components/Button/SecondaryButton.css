@@ -1,0 +1,22 @@
+.ui-button--secondary {
+    background-color: var(--white);
+    color: var(--gray-900);
+    border: 1px solid var(--gray-400);
+}
+
+.ui-button--secondary:hover {
+    background-color: var(--gray-200);
+}
+
+.ui-button--secondary:active,
+.ui-button--secondary:focus {
+    background-color: var(--gray-200);
+}
+
+.ui-button--secondary.ui-button--disabled {
+    background-color: var(--gray-300);
+    border-color: var(--gray-300);
+    cursor: default;
+    pointer-events: none;
+    color: var(--white);
+}
